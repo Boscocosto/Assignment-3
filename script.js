@@ -1,9 +1,9 @@
-const calculateButton = document.getElementById('calculate');
-const resultInput = document.getElementById('result');
+const calculateButton = document.getElementById('calculate1');
+const resultInput = document.getElementById('result1');
 
-calculateButton.addEventListener('click', calculate);
+calculateButton.addEventListener('click', cosine);
 
-function calculate() {
+function cosine() {
     const a = parseFloat(document.getElementById('a').value);
     const b = parseFloat(document.getElementById('b').value);
     const angleC = parseFloat(document.getElementById('angleC').value);
