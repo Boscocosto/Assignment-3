@@ -18,63 +18,63 @@ const resultInput2 = document.getElementById('result2');
 calculateButton2.addEventListener('click', Asymptote);
 
 function Asymptote() {
-
+    
     const m = parseFloat(document.getElementById('m').value);
     const n1 = parseFloat(document.getElementById('n1').value);
-    let output = "";
+    let result = "";
     
     if (m === n1) {
 
-        output = "The asymptote is horizontal";
+        result = "The asymptote is horizontal";
     }
 
     else if (n1>m) {
 
-        output = "The asymptote is the x-axis";
+        result = "The asymptote is the x-axis";
     }
 
     else if (m>n1) {
 
         if ((m-n1) === 1){
-            output =" Linear"
+            result =" Linear"
         }
 
         else if ((m-n1) === 2){ 
-            output ="Quadratic"
+            result ="Quadratic"
         }
 
         else if ((m-n1) === 3){ 
-            output ="Cubic"
+            result ="Cubic"
         }
 
         else if ((m-n1) === 4){ 
-            output ="Quartic"
+            result ="Quartic"
         }
 
         else if ((m-n1) === 5){ 
-            output ="Quintic"
+            result ="Quintic"
         }
 
         else if ((m-n1) === 6){ 
-            output ="Sextic"
+            result ="Sextic"
         }
 
         else if ((m-n1) === 7){ 
-            output ="Septic"
+            result ="Septic"
         }
 
         else if ((m-n1) === 8){ 
-            output ="Octic"
+            result ="Octic"
         }
 
         else if ((m-n1) === 9){ 
-            output ="Nonic"
+            result ="Nonic"
         }
 
         else if ((m-n1) === 10){ 
-            output ="Decic"
+            result ="Decic"
         }
-    
-        resultInput2.value = output;
     }
+    resultInput2.value = result;
+    
 }
