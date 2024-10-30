@@ -78,3 +78,19 @@ function Asymptote() {
     resultInput2.value = result;
     
 }
+
+const calculateButton3 = document.getElementById('calculate3');
+const resultInput3 = document.getElementById('result3');
+
+calculateButton3.addEventListener('click', Approximation);
+
+function Approximation() {
+    const n2 = parseFloat(document.getElementById('n2').value);
+    let piapprox = 0;
+
+    for (let i = 0; i <= n2; i++) {
+        piapprox += 4 * (Math.pow(-1, i)) / ((2 * i) + 1);
+    }
+
+    resultInput3.value = piapprox;
+}
