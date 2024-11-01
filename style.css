@@ -1,3 +1,9 @@
+.Calculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .cosine {
     display: flex;
     flex-direction: column;
@@ -35,7 +41,6 @@
 }
 
 button {
-    flex: 1;
     padding: 10px;
     border: none;
     background-color: #28a745;

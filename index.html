@@ -5,30 +5,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cosine Law Calculator</h1>
-    <div class="cosine">
-        <label for="sideA">Side A:</label>
-        <input type="number" id="a">
-        <label for="sideB">Side B:</label>
-        <input type="number" id="b">
-        <label for="angleC">Angle C:</label>
-        <input type="number" id="angleC">
-        <label for="result">Side C (Result):</label>
-        <input type="number" id="result1" readonly>
-        <button type="button" id="calculate1">Calculate</button>
+    <div class="Calculator">
+        <div class="cosine">
+            <h1>Cosine Law Calculator</h1>
+            <label for="sideA">Side A:</label>
+            <input type="number" id="a">
+            <label for="sideB">Side B:</label>
+            <input type="number" id="b">
+            <label for="angleC">Angle C:</label>
+            <input type="number" id="angleC">
+            <label for="result">Side C (Result):</label>
+            <input type="number" id="result1" readonly>
+            <button type="button" id="calculate1">Calculate</button>
+        </div>
+        <div class="Asymptote">
+            <h1>Asymptote Finder</h1>
+            <label for="m">m Value:</label>
+            <input type="number" id="m">
+            <label for="n">n Value:</label>
+            <input type="number" id="n1">
+            <label for="result">Asymptote Type (Result):</label>
+            <input type="text" id="result2" readonly>
+            <button type="button" id="calculate2">Calculate</button>
+        </div>
     </div>
-    <h1>Asymptote Finder</h1>
-    <div class="Asymptote">
-        <label for="m">m Value:</label>
-        <input type="number" id="m">
-        <label for="n">n Value:</label>
-        <input type="number" id="n1">
-        <label for="result">Asymptote Type (Result):</label>
-        <input type="text" id="result2" readonly>
-        <button type="button" id="calculate2">Calculate</button>
-    </div>
-    <h1>Gregory–Leibniz Pi Approximation:</h1>
     <div class="Approximation">
+        <h1>Gregory–Leibniz Pi Approximation:</h1>
         <label for="n">n Value:</label>
         <input type="number" id="n2">
         <label for="result">Pi Approximation (Result):</label>
